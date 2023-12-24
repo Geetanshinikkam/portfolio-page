@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         * {
             margin: 0;
@@ -90,16 +91,70 @@
         padding-left: 50px;
         
        }
-       @media screen {
-        
+       @media (width < 900px) {
+        .rightsection img {
+            height: 14rem;
+            width: 14rem;
+            object-fit:cover;
+            border-radius: 50%;
+            margin bottom: 80px;
+            border: 4px solid ;
+        }
+    }
+        @media (width < 800px) {
+        .leftsection{
+            padding-left: 40px;
+            font-size: 2rem;
+        }
+        .rightsection{
+            padding-left: 20px;
+        }
+    }
+    @media (width < 430px) {
+        .info1{
+            padding-left: 15%;
+            width: 400px;
+            height: 250px;
+            
+        }
+    }
+       @media(width < 385px){
+        .left{
+            display: none;
+        }
        }
-       
+       @media(width < 800px)
+       {
+        nav ul li{
+        font-size: 11px;
+        } 
+        nav ul{
+            width: 100%;
+            margin-right: 0%;
+        }
+        body{
+            width: 100%;
+            
+        }
+
+        #checkbtn{
+           display: contents;
+        }
+        .left{
+            font-size: 1.2rem;
+            
+        }
+        .firstsection{
+            display: inline-flex;
+        }
+       }
     </style>
 </head>
 
 <body>
     <header>
         <nav>
+            
             <div class="left"> Portfolio </div>
             <div class="right">
                 <ul>
@@ -126,12 +181,14 @@
                 <img src="Mypic1.jpeg" alt="Geet" >
             </div>
         </section>
-        <span class="info">
-        <font size="4.9px"><p><center>My name is Geetanshi and I am pursuing BCA and I am also looking forward for more
-             <br>opportunities in the field of web development. My objective is to secure
+        <div class="info1">
+         <span class="info">
+          <font size="4.9px"><p><center>My name is Geetanshi and I am pursuing BCA and I am also looking forward for more
+             <br>opportunities in the field of web delevopment. My objective is to secure
              <br> a responsible job in place where i can implement what i have learned and studies,
               <br>as well as developing knowledge.</center></p></font>
-        </span>
+         </span>
+        </div>
     </main>
     
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
